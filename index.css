@@ -1,12 +1,21 @@
-    *{
+body {
+  background-color: black;
+}
+*{
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
 
     nav{
-      background-color: lightseagreen;
+      background-color: gray;
       padding: 15px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      margin: 30px;
+      margin-left: 15%;
+      margin-right: 15%;
+      border-radius: 45px;
     }
 
     ul{
@@ -24,9 +33,15 @@
       padding: 8px 15px;
       border-radius: 6px;
       transition: 0.3s;
+      text-transform: uppercase;
     }
 
     ul li a:hover{
-      background-color: #38bdf8;
-      color: black;
+      background-color: black;
+      color:white;
+      border-radius: 30px;
+    }
+    img {
+      height: 30px;
+      width: 30px;
     }
