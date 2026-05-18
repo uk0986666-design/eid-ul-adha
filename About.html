@@ -9,18 +9,42 @@
   background-color: black;
 }
         nav{
-      background-color: gray;
+     background-color: gray;
       padding: 15px;
       padding-top: 30px;
       padding-bottom: 30px;
       margin: 30px;
-      margin-left: 40%;
-      margin-right: 40%;
-      border-radius: 70px;
+      margin-left: 15%;
+      margin-right: 15%;
+      border-radius: 45px;
       
         }
 
-  li {
+     ul{
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    ul li a{
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      font-family: Arial, sans-serif;
+      padding: 8px 15px;
+      border-radius: 6px;
+      transition: 0.3s;
+      text-transform: uppercase;
+    }
+
+    ul li a:hover{
+      background-color: black;
+      color:white;
+      border-radius: 30px;
+    }    
+
+  .Activitieslist {
     text-decoration: none;
     text-align: center;
     list-style: none;
@@ -43,7 +67,7 @@
   }
   .ancor {
     text-decoration: none;
-    color: black;
+    color: white;
   }
 
   .foraboutlist1{
@@ -99,14 +123,30 @@
 .importanceh1{
     color: azure;
 }
+.aboutH{
+  text-align: center;
+  color: white;
+}
+
+footer{
+      text-align: center;
+      margin-top: 60px;
+      padding-bottom: 30px;
+      color: gray;
+    }
+
     </style>
 </head>
 <body>
-      <nav>
+  <nav>
     <ul>
-    <li>About Page</li>
+      <li><a href="Animals-Gallery.html">Animal Gallery</a></li>
+      <li><a href="DonationPage.html">Donation Page</a></li>
+      <li><a href="Eid-Greeting-Card-Page.html">Eid Cards Page</a></li>
+      <li><a href="Eid-Recipe-Page.html">Eid Recipe Page</a></li>
     </ul>
   </nav>
+  <h1 class="aboutH">ABOUT PAGE</h1>
   <div>
     <h2><button class="abutton"><a class="ancor" href="./index.html">go back</a></button></h2>
 
@@ -159,22 +199,25 @@ The lesson of sacrifice helps Muslims become better human beings by teaching the
 <br>
 
     
-<div class="listDiv">
+<!-- <div class="listDiv">
     <br>
     <h2 class="foraboutlisth1">Activities of Eid ul Adha</h2>
     <ul class="foraboutlist1">
-  <li>Offering Eid Prayer</li>
-  <li>Sacrificing Animals</li>
-  <li>Distributing Meat to Poor People</li>
-  <li>Wearing New Clothes</li>
-  <li>Preparing Delicious Food</li>
-  <li>Visiting Relatives and Friends</li>
-  <li>Giving Charity to Needy People</li>
-  <li>Decorating Homes</li>
-  <li>Exchanging Eid Greetings</li>
-  <li>Spending Time with Family</li>
+  <li class="Activitieslist">Offering Eid Prayer</li>
+  <li class="Activitieslist">Sacrificing Animals</li>
+  <li class="Activitieslist">Distributing Meat to Poor People</li>
+  <li class="Activitieslist">Wearing New Clothes</li>
+  <li class="Activitieslist">Preparing Delicious Food</li>
+  <li class="Activitieslist">Visiting Relatives and Friends</li>
+  <li class="Activitieslist">Giving Charity to Needy People</li>
+  <li class="Activitieslist">Decorating Homes</li>
+  <li class="Activitieslist">Exchanging Eid Greetings</li>
+  <li class="Activitieslist">Spending Time with Family</li>
 </ul>
 <br>
-</div>
+</div> -->
+ <footer>
+    <p>© 2026 Eid ul Adha Website | All Rights Reserved</p>
+  </footer>
 </body>
 </html>

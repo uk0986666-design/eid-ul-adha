@@ -1,11 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animal Gallery</title>
+
+  <style>
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background-color: black;
+      color: white;
+    }
+
+    nav{
+      background-color: gray;
+      margin: 30px 15%;
+      padding: 20px;
+      border-radius: 40px;
+    }
+
+    ul{
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      align-items: center;
+    }
+
+    ul li a{
+      text-decoration: none;
+      color: white;
+      text-transform: uppercase;
+      padding: 10px 15px;
+      border-radius: 20px;
+      transition: 0.3s;
+    }
+
+    ul li a:hover{
+      background-color: black;
+    }
+
+    .heading{
+      text-align: center;
+      margin-top: 40px;
+      font-size: 45px;
+      text-transform: uppercase;
+      text-decoration: underline;
+    }
+
+    .gallery{
+      width: 90%;
+      margin: auto;
+      margin-top: 50px;
+
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+
+    .card{
+      background-color: #1a1a1a;
+      border-radius: 20px;
+      overflow: hidden;
+      transition: 0.3s;
+      box-shadow: 0px 0px 10px gray;
+    }
+
+    .card:hover{
+      transform: scale(1.03);
+    }
+
+    .card img{
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .card-content{
+      padding: 20px;
+      text-align: center;
+    }
+
+    .card-content h2{
+      margin-bottom: 15px;
+      color: lightgray;
+    }
+
+    .card-content p{
+      line-height: 28px;
+      color: #d3d3d3;
+    }
+
+
+    
+
+    footer{
+      text-align: center;
+      margin-top: 60px;
+      padding-bottom: 30px;
+      color: gray;
+    }
+
+  </style>
+
 </head>
 <body>
-    
+
+  <nav>
+    <ul>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="DonationPage.html">Donation</a></li>
+      <li><a href="Eid-Greeting-Card-Page.html">Eid Cards Page</a></li>
+    </ul>
+  </nav>
+
+
+
+  <h1 class="heading">Animal Gallery</h1>
+
+
+  <section class="gallery">
+
+    <div class="card">
+      <img src="images/goat.jpg" alt="Goat">
+
+      <div class="card-content">
+        <h2>Goat</h2>
+
+        <p>
+          Goats are commonly sacrificed on Eid ul Adha.
+          They are easy to care for and loved by many families.
+        </p>
+
+        <button class="btn">Learn More</button>
+      </div>
+    </div>
+
+
+
+    <div class="card">
+      <img src="images/cow.jpg" alt="Cow">
+
+      <div class="card-content">
+        <h2>Cow</h2>
+
+        <p>
+          Cows are large sacrificial animals and their meat
+          is shared among many people and needy families.
+        </p>
+
+        <button class="btn">Learn More</button>
+      </div>
+    </div>
+
+
+
+    <div class="card">
+      <img src="images/camel.jpg" alt="Camel">
+
+      <div class="card-content">
+        <h2>Camel</h2>
+
+        <p>
+          Camels are strong animals and are also sacrificed
+          in many Muslim countries during Eid ul Adha.
+        </p>
+
+        <button class="btn">Learn More</button>
+      </div>
+    </div>
+
+
+
+    <div class="card">
+      <img src="images/sheep.jpg" alt="Sheep">
+
+      <div class="card-content">
+        <h2>Sheep</h2>
+
+        <p>
+          Sheep are beautiful and peaceful animals that are
+          also chosen for Qurbani on Eid ul Adha.
+        </p>
+
+        <button class="btn">Learn More</button>
+      </div>
+    </div>
+
+  </section>
+
+
+  <footer>
+    <p>© 2026 Eid ul Adha Website | All Rights Reserved</p>
+  </footer>
+
 </body>
 </html>
