@@ -3,9 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Donation-Page</title>
+    <style>
+        
+    nav{
+      background-color: gray;
+      padding: 15px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      margin: 30px;
+      margin-left: 15%;
+      margin-right: 15%;
+      border-radius: 45px;
+    }
+
+    ul{
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    ul li a{
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      font-family: Arial, sans-serif;
+      padding: 8px 15px;
+      border-radius: 6px;
+      transition: 0.3s;
+      text-transform: uppercase;
+    }
+
+    ul li a:hover{
+      background-color: black;
+      color:white;
+      border-radius: 30px;
+    }
+    body{
+        background-color: #111;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        color: white;
+
+    }
+  form{
+    background-color: #1e1e1e;
+    width: 320px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px gray;
+  }
+  label{
+    color: #dcdcdc;
+  }
+
+  input{
+    width: 90%;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #2b2b2b;
+    border: 1px solid gray;
+    color: white;
+    border-radius: 5px;
+  }
+  button{
+    background-color: gray;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+  }
+
+  button:hover{
+    background-color: #555;
+  }
+  hr{
+    width: 360px;
+    opacity: 0.5;
+  }
+  
+    footer{
+      text-align: center;
+      margin-top: 60px;
+      padding-bottom: 30px;
+      color: gray;
+    }
+    </style>
 </head>
 <body>
-    
+      <nav>
+    <ul>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Animals-Gallery.html">Animal Gallery</a></li>
+      <li><a href="Eid-Greeting-Card-Page.html">Eid Cards</a></li>
+      <li><a href="Eid-Recipe-Page.html">Eid Recipe</a></li>
+    </ul>
+  </nav>
+    <form>
+        <label for="name">Full Name : </label>
+        <input type="text" name="fullname" id="name">
+        <br> <br>
+        <label for="email">Enter email : </label>
+        <input type="email">
+        <br><br>
+        <label for="amount">Enter amount : </label>
+        <input type="number">
+        <br><br><br>
+        <button>Donate Now</button>
+    </form>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <footer>
+    <p>© 2026 Eid ul Adha Website | All Rights Reserved</p>
+    </footer>
 </body>
 </html>
