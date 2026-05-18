@@ -45,3 +45,39 @@ body {
       height: 30px;
       width: 30px;
     }
+    .section {
+      color: lightgray;
+    }
+    .welcome{
+      color: lightgray;
+      text-decoration: underline;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    .homePanel{
+      height: 400px;
+      width: 1520px;
+    }
+    .footer{
+      color: gray;
+      text-align: center;
+      opacity: 0.5;
+    }
+
+    .button{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100px;
+      height: 50px;
+      font-size: 13px;
+      text-transform: uppercase;
+      color: aliceblue;
+      background-color: grey;
+      border-radius: 15px;
+    }
+
+    .button :hover{
+        background-color: black;
+      color:white;
+    }
