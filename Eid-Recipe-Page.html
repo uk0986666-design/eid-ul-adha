@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eid-Recipe-Page</title>
     <style>
-           nav{
+    body{
+     background-color: #111;
+     color: white;
+     font-family: Arial, Helvetica, sans-serif;
+     text-align: center;
+     }
+
+    nav{
       background-color: gray;
       padding: 15px;
       padding-top: 30px;
@@ -39,13 +46,69 @@
       color:white;
       border-radius: 30px;
     }
+
+    ol{
+        list-style-type: none;
+        text-align: center;
+    }
+
     .heading{
       text-align: center;
       margin-top: 40px;
       font-size: 45px;
       text-transform: uppercase;
       text-decoration: underline;
+      color: white;
     }
+
+    .recipe-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .recipe-card{
+        background-color: #1e1e1e;
+        width: 280px;
+        border-radius: 15px;
+        padding: 12px;
+        box-shadow: 0px 0px 10px gray;
+    }
+    .recipe-card img{
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    table{
+        width: 80%;
+        margin: 30px auto;
+        border-collapse: collapse;
+        background-color: #1e1e1e;
+        box-shadow: 0px 0px 10px gray;
+    }
+    th, td{
+        border: 1px solid gray;
+        padding: 10px;
+    }
+
+    th{
+        background-color: #333;
+    }
+
+    .recipe-card:hover{
+        transform: scale(1.03);
+        transition: 0.3s;
+    }
+
+footer{
+      text-align: center;
+      margin-top: 60px;
+      padding-bottom: 30px;
+      color: gray;
+    }
+
+
     </style>
 </head>
 <body>
@@ -59,5 +122,103 @@
     </ul>
   </nav>
   <h1 class="heading">Recipe page</h1>
+
+  <h1>Eid Spacial Recipe</h1>
+  <p>
+    Enjoy delicious traditional Eid foods with your family.
+  </p>
+
+  <section class="recipe-container">
+    <div class="recipe-card">
+        <img src="images/biryani.jpeg" alt="Biryani">
+        <h2>Biryani</h2>
+        <p>
+            Spicy and delicious rice dish made with meat and spices.
+        </p>
+        <h3>Ingredients</h3>
+    <ol>
+        <li>Beef or Mutton</li>
+        <li>Basmati Chawal</li>
+        <li>Brown Onions</li>
+        <li>Kharray Masale & Biryani Masala</li>
+        <li>yogart</li>
+    </ol>
+    </div>
+
+    <div class="recipe-card">
+        <img src="images/bbq.jpeg" alt="BBQ">
+        <h2>BBQ</h2>
+        <p>
+            Grilled meat full of smoky and spicy flavor.
+        </p>
+        <h3>Ingredients</h3>
+        <ol>
+            <li>Beef or Mutton</li>
+            <li>Kacha Papita</li>
+            <li>Adrak-Lehsan Paste</li>
+            <li>BBQ Masala</li>
+            <li>yogart</li>
+        </ol>
+    </div>
+
+    <div class="recipe-card">
+        <img src="images/nihari.jpg" alt="Nihari">
+        <h2>Nihari</h2>
+        <p>
+            Traditional slow-cooked meat curry loved on Eid.
+        </p>
+        <h3>Ingredients</h3>
+        <ol>
+            <li>Beef Shank</li>
+            <li>Nihari Masala</li>
+            <li>Aata</li>
+            <li>Desi Ghee</li>
+            <li>Garnish</li>
+        </ol>
+    </div>
+
+     <div class="recipe-card">
+        <img src="images/kababs.jpg" alt="kababs">
+        <h2>kababs</h2>
+        <p>
+            Soft and juicy kebabs served with naan and chutney.
+        </p>
+        <h3>Ingredients</h3>
+        <ol>
+            <li>Keema</li>
+            <li>Kacha Papita</li>
+            <li>Pyaz aur Hari Mirch</li>
+            <li>Besan</li>
+            <li>Kabab Masala </li>
+        </ol>
+    </div>
+
+    <table border="1">
+        <tr>
+            <th>Recipe</th>
+            <th>Cooking time</th>
+        </tr>
+        <tr>
+            <td>Biryani</td>
+            <td>1 hour</td>
+        </tr>
+        <tr>
+            <td>BBQ</td>
+            <td>50 minutes</td>
+        </tr>
+        <tr>
+            <td>Nihari</td>
+            <td>3 hour</td>
+        </tr>
+        <tr>
+            <td>kababs</td>
+            <td>50 minutes</td>
+        </tr>
+    </table>
+ </section>
+
+ <footer>
+    <p>© 2026 Eid ul Adha Website | All Rights Reserved</p>
+ </footer>
 </body>
 </html>
